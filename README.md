@@ -1,2 +1,2 @@
 # cppcc
-cppcc - Circular Parallel Plate Capacitance Calculator. 
+cppcc - Cylindrical Parallel Plate Capacitance Calculator. 

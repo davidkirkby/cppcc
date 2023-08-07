@@ -1,0 +1,5 @@
+4th August 2005. version 0.53
+
+Added a fflush to stdout, to correct a bug that prevented 
+dawn working properly if output was redirected to a file. 
+This was supposed to have been fixed in 0.52, but was not
