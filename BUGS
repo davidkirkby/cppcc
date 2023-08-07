@@ -1,4 +1,3 @@
-If an option is given to 'vna' which is not recondised, the program
-dumps core, rather than reporting it does not reconie the option. 
+It does not actutally do anything yet!
 
 
