@@ -98,6 +98,7 @@ int main(int argc, char **argv) {
 
    double_array3D = allocate_3d_double_array(length, width_and_height, width_and_height);
    float_array3D = allocate_3d_float_array(length, width_and_height, width_and_height);
+   check_inputs_are_reasonable(r1, t1, r2, t2, x, length, width_and_height);
    //set_initial_voltages_on_3D_float_array(array3D, r1, t1, r2, t2, x, length, width_and_height);
 }
 

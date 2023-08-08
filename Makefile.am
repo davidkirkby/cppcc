@@ -3,7 +3,7 @@
 
 SUBDIRS =  . src 
 
-EXTRA_DIST = BUGS
+dist_data_DATA = BUGS README.md
 
 CLEANFILES = 
 DISTCLEANFILES = 
