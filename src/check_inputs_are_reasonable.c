@@ -18,6 +18,10 @@ void check_inputs_are_reasonable(unsigned int r1, unsigned int t1, unsigned int 
       fprintf(stderr,"ERROR: The sum of the thickness of the plates, plus the gap between them (%u+%u+%u=%u), is too big for the length (%u)\n", t1, t2, x, t1+t2+x,length);
       exit(1);
    }
+   if ( x <= 0) {
+     fprintf(stderr,"The gap between the plates, must 1 or more\n");    
+     exit(1);
+   }
 
    /* Check that the plates will fit, but the walls seem too close */ 
    
