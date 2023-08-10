@@ -1,7 +1,4 @@
 *.o 
 *.Po
 *.bak
-Makefile 
-Makefile.in
 cppcc
-config.log
