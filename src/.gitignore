@@ -4,3 +4,4 @@
 cppcc
 Makefile
 Makefile.in
+.deps/
