@@ -2,3 +2,5 @@
 *.Po
 *.bak
 cppcc
+Makefile
+Makefile.in
