@@ -12,9 +12,10 @@ void free_3d_float_array(float ***array3D, int dim1, int dim2);
 
 void usage_cppcc(char *exefilename); 
 
-void set_initial_voltages_on_3D_float_array(float *** voltage_array, unsigned int r1, unsigned int t1, unsigned int r2, unsigned int t2, unsigned int x, unsigned int length, unsigned int width_and_height);
+void set_voltages_for_capacitor_plates_float(float *** voltage_array, unsigned int r1, unsigned int t1, unsigned int r2, unsigned int t2, unsigned int x, unsigned int length, unsigned int width_and_height);
 
-void set_initial_voltages_on_3D_double_array(double *** voltage_array, unsigned int r1, unsigned int t1, unsigned int r2, unsigned int t2, unsigned int x, unsigned int length, unsigned int width_and_height);
+void set_voltages_for_capacitor_plates_double(double *** voltage_array, unsigned int r1, unsigned int t1, unsigned int r2, unsigned int t2, unsigned int x, unsigned int length, unsigned int width_and_height);
+
 
 
 void check_inputs_are_reasonable(unsigned int r1, unsigned int t1, unsigned int r2, unsigned int t2, unsigned int x, unsigned int length, unsigned int width_and_height);

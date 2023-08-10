@@ -140,23 +140,18 @@ int main(int argc, char **argv) {
     // Record the starting time of setting the voltages to a specific value. 
     // Memory allocation is only done once, so don't bother timing that. 
     if (floats == TRUE) {
+       /*
        clock_gettime(CLOCK_MONOTONIC, &start_time);
-       float_array3D = allocate_3d_float_array(length, width_and_height, width_and_height);
        clock_gettime(CLOCK_MONOTONIC, &end_time);
-       // Calculate the elapsed time in seconds
        elapsed_time = (end_time.tv_sec - start_time.tv_sec) + (end_time.tv_nsec - start_time.tv_nsec) / 1e9;
        printf("Elapsed time allocating  %f GB RAM was %f seconds\n", ram, elapsed_time);
+       */
 
-       clock_gettime(CLOCK_MONOTONIC, &start_time);
-       set_initial_voltages_on_3D_float_array(float_array3D, r1, t1, r2, t2, x, length, width_and_height);
-       clock_gettime(CLOCK_MONOTONIC, &end_time);
-       elapsed_time = (end_time.tv_sec - start_time.tv_sec) + (end_time.tv_nsec - start_time.tv_nsec) / 1e9;
-       printf("Elapsed time setting volages with  %f GB RAM  with %d threads was %f seconds\n", ram, num_threads, elapsed_time);
+      float_array3D = allocate_3d_float_array(length, width_and_height, width_and_height);
+      set_voltages_for_capacitor_plates_float(float_array3D, r1, t1, r2, t2, x, length, width_and_height);
 
    } else {
       double_array3D = allocate_3d_double_array(length, width_and_height, width_and_height);
-
-      set_initial_voltages_on_3D_double_array(double_array3D, r1, t1, r2, t2, x, length, width_and_height);
       set_voltages_for_capacitor_plates_double(double_array3D, r1, t1, r2, t2, x, length, width_and_height);
    }
 
