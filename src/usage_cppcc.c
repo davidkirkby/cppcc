@@ -15,7 +15,7 @@ void usage_cppcc(char *exename) {
    printf("      Er is the relative permittivity of the medium.\n");
    printf("      MaxRAM is the maximum RAM (GB) you wish program to use\n");
    printf("Options:\n");
-   printf("        --float Use 4-byte floats rather than 8-bytes doubles to save memory\n");
+   printf("      --floats Use 4-byte floats rather than 8-bytes doubles to save memory\n");
    printf("            /----------------------------------------------------------------------/\n");
    printf("           /                                                                      /|\n");
    printf("          /                                                                      / |\n");
