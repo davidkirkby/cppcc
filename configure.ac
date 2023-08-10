@@ -31,6 +31,7 @@ AC_ISC_POSIX
 # check for the optimised
 # AC_CHECK_LIB([copt],[main])
 AC_CHECK_LIB(m,log)
+AC_CHECK_LIB(pthread,pthread_create)
 
 # Checks for header files.
 AC_HEADER_STDC
